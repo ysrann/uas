@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f0f8ff, #cceeff);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2b4f60;
+  margin-bottom: 20px;
+}
+
+#game-board {
+  width: 90vw;
+  max-width: 500px;
+  height: 90vw;
+  max-height: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 4px solid #444;
+  position: relative;
+}
+
+.cell {
+  border: 1px solid #999;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.pawn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.pawn.red {
+  background-color: red;
+}
+
+.pawn.yellow {
+  background-color: yellow;
+}
+
+#dice-container {
+  margin-top: 20px;
+}
+
+#roll-dice {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #33b5e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#dice-result {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+#question-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fffbe6;
+  border: 2px solid #ffaa00;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.option-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: #ffa726;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #444;
+}
+
+#stats {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#toggle-music {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
