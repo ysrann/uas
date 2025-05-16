@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Ular Tangga Edukatif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Game Ular Tangga Edukatif</h1>
+  <div id="game-board"></div>
+
+  <div id="dice-container">
+    <button id="roll-dice">Lempar Dadu</button>
+    <div id="dice-result"></div>
+  </div>
+
+  <div>
+    <button id="toggle-music">🔊 Musik</button>
+  </div>
+
+  <div id="question-box" class="hidden">
+    <p id="question-text"></p>
+    <div id="options"></div>
+  </div>
+
+  <div id="status"></div>
+
+  <div id="stats">
+    <h3>Statistik</h3>
+    <p id="player1-stats">Pemain 1 (Merah): 0 kemenangan</p>
+    <p id="player2-stats">Pemain 2 (Kuning): 0 kemenangan</p>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bg-music" src="assets/music.mp3" loop autoplay></audio>
+  <audio id="sfx-dice" src="assets/dice.mp3"></audio>
+  <audio id="sfx-ladder" src="assets/ladder.mp3"></audio>
+  <audio id="sfx-snake" src="assets/snake.mp3"></audio>
+  <audio id="sfx-correct" src="assets/correct.mp3"></audio>
+  <audio id="sfx-wrong" src="assets/wrong.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
